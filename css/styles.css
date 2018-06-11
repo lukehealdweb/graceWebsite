@@ -132,7 +132,7 @@ body{
     grid-area: section5;
     height: 40em;
     background-color: aqua;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(/assets/images/schoolGroups.jpg);
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(../assets/images/schoolGroups.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,7 +141,7 @@ body{
     grid-area: section6;
     height: 40em;
     background-color: beige;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(/assets/images/rental.jpg);
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(../assets/images/rental.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -150,7 +150,7 @@ body{
     grid-area: section7;
     height: 40em;
     background-color: navajowhite;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(/assets/images/groupLessons.jpg);
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(../assets/images/groupLessons.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,7 +159,7 @@ body{
     grid-area: section8;
     height: 40em;
     background-color: lawngreen;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(/assets/images/contactUs.jpg);
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(../assets/images/contactUs.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
