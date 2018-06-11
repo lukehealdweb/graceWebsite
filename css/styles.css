@@ -60,7 +60,7 @@ body{
     grid-area: section2;
     height: 100vh;
     background-color: white;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.69), rgb(255, 255, 255)), url(/assets/images/whiteHut.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.69), rgb(255, 255, 255)), url(../assets/images/whiteHut.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -75,7 +75,7 @@ body{
     grid-area: section3;
     height: 50em;
     background-color: orange;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.82), rgb(255, 255, 255)), url(/assets/images/surfStock.jpg);
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.82), rgb(255, 255, 255)), url(../assets/images/surfStock.jpg);
     background-position: bottom;
     background-size: cover;
 }
@@ -102,7 +102,7 @@ body{
     grid-area: section4;
     height: 40em;
     background-color: azure;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(/assets/images/kidsCamps.jpg);
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(../assets/images/kidsCamps.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;    
