@@ -105,21 +105,21 @@ body{
 .section5{
     grid-area: section5;
     height: 35em;
-    background: linear-gradient(rgba(29, 115, 124, 0.80), rgba(29, 115, 124, 0.80)), url(/assets/images/groupLessons.jpg);
+    background: linear-gradient(rgba(29, 115, 124, 0.80), rgba(29, 115, 124, 0.80)), url(../assets/images/groupLessons.jpg);
     background-position: center;
     background-size: cover;
 }
 .section6{
     grid-area: section6;
     height: 30em;
-    background: linear-gradient(rgba(63, 157, 213, 0.80), rgba(63, 157, 213, 0.80)), url(/assets/images/schoolGroups.jpg);
+    background: linear-gradient(rgba(63, 157, 213, 0.80), rgba(63, 157, 213, 0.80)), url(../assets/images/schoolGroups.jpg);
     background-position: center;
     background-size: cover;
 }
 .section7{
     grid-area: section7;
     height: 30em;
-    background: linear-gradient(rgba(29, 115, 124, 0.80), rgba(29, 115, 124, 0.80)), url(/assets/images/birthdayParty.jpg);
+    background: linear-gradient(rgba(29, 115, 124, 0.80), rgba(29, 115, 124, 0.80)), url(../assets/images/birthdayParty.jpg);
     background-position: center;
     background-size: cover;
 }
