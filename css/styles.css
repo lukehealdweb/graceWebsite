@@ -1,202 +1,154 @@
 body{
     margin: 0;
 }
-#container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-}
-
-#navBar {
-  position: fixed;
-  width: 100vw;
-  height: 5em;
-  background-color: #fff;
-  transition: 0.2s;
-  display: flex;
-  z-index: 100;
-}
-.floatingNav {
-  width: calc(100vh - 100px); 
-  border-radius: 2px;
-  box-shadow: 0px 1px 10px #999;
-      
-}
-#topLogo{
-    margin-top: 1em;
-    font-size: 1.5em;
-    margin-left: 1em;
-    color: #0a8e9d;
-    font-family: 'Gloria Hallelujah', cursive;    
-}
-
 /*Grid start*/
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-        "navigation navigation"
+        "section1 section1"
         "section2 section2"
         "section3 section3"
-        "section4 section5"
+        "section4 section4"
+        "section5 section5"
         "section6 section6"
-        "section7 section8"
+        "section7 section7"
+        "section8 section8"
         "section9 section9"
         "section10 section11"
         "section12 section12"
-        "section13 section13"
-        "section14 section14";
+;
 }
-/*Grid End*/
-.navigation{
-    grid-area: navigation;
-    height: 4em;
-    background-color: white;
+.section1{
+    grid-area: section1;
+    height: 3em;
+    width: 100%;
+    background-color: #3f9dd5;
+    margin-bottom: 1px;
+}
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+}
+#contactInfo{
+    display: inline-flex;
+    padding-right: 20px;
+    color: white;
+    margin-top: 1.5em;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+.contactInfo{
+    display: block;
+    height: 3em;
+    width: 100%;
+    text-align: center;
+}
+#icons{
+    color: white;
+    padding: 10px;
 }
 .section2{
     grid-area: section2;
-    height: 100vh;
-    background-color: white;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.69), rgb(255, 255, 255)), url(../assets/images/whiteHut.jpg);
-    background-position: center;
-    background-size: cover;
+    background-color: #3f9dd5 ;
 }
-#mainLogo{
+#logo{
+    height: 15em;
+}
+.logo{
     position: absolute;
-    height: 90vh;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+}
+.item{
+    height: 100vh;
+    width: 100vw;
+}
+.overlayFilter{
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 1600px;
+  opacity: 0.2;
+}
+.heading{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+#learn{
+    font-family: lobster;
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    margin-top: 6em;
+}
+.owl-dots{
+    display: none;
 }
 .section3{
     grid-area: section3;
-    height: 55em;
-    background-color: orange;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.82), rgb(255, 255, 255)), url(../assets/images/surfStock.jpg);
-    background-position: bottom;
-    background-size: cover;
-    text-align: center;
-}
-#whiteHut{
-    text-align: center;
-    font-family: 'Luckiest Guy', cursive;
-    color: #0a8e9d;
-    margin-top: 5em;
-    margin-bottom: 1em;
-}
-#seeYou{
-    text-align: center;
-    font-family: 'Gloria Hallelujah', cursive; 
-    color: #0a8e9d;
-    margin-bottom: 2em;
-}
-#headerText{
-    text-align-last: center;
-    font-size: 1.3em;
-    font-family: 'Open Sans', sans-serif;
-    color: #0a8e9d;
-    margin-left: 2em;
-    margin-right: 2em;
+    height: 35em;
+    background-color: #ffffff;
 }
 .section4{
     grid-area: section4;
-    height: 40em;
-    background-color: azure;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(../assets/images/kidsCamps.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;    
+    height: 35em;
+    background-color: #f9eb71; 
 }
-#salesPitch{
-    text-align-last: center;
-    font-size: 1.3em;
-    font-family: 'Open Sans', sans-serif;
-    color: #0a8e9d;
-    margin-left: 4em;
-    margin-right: 3em;
-    cursor: pointer
-}
-.jump:hover{
-    margin-top: -10px;    
-}
-#salesTitle{
-    text-align: center;
-    font-family: 'Luckiest Guy', cursive;
-    color: #0a8e9d;
-    margin-top: 5em;
-    margin-bottom: 1em;
-    cursor: pointer
-}
-
 .section5{
     grid-area: section5;
-    height: 40em;
-    background-color: aqua;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(../assets/images/schoolGroups.jpg);
+    height: 35em;
+    background: linear-gradient(rgba(29, 115, 124, 0.80), rgba(29, 115, 124, 0.80)), url(/assets/images/groupLessons.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 .section6{
     grid-area: section6;
-    height: 40em;
-    background-color: beige;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(../assets/images/rental.jpg);
+    height: 30em;
+    background: linear-gradient(rgba(63, 157, 213, 0.80), rgba(63, 157, 213, 0.80)), url(/assets/images/schoolGroups.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 .section7{
     grid-area: section7;
-    height: 40em;
-    background-color: navajowhite;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(../assets/images/groupLessons.jpg);
+    height: 30em;
+    background: linear-gradient(rgba(29, 115, 124, 0.80), rgba(29, 115, 124, 0.80)), url(/assets/images/birthdayParty.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 .section8{
     grid-area: section8;
-    height: 40em;
+    height: 30em;
     background-color: lawngreen;
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(../assets/images/contactUs.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .section9{
     grid-area: section9;
-    height: 40em;
+    height: 30em;
     background-color: teal;
 }
 .section10{
     grid-area: section10;
-    height: 40em;
+    height: 30em;
     background-color: lightblue;
 }
 .section11{
     grid-area: section11;
-    height: 40em;
+    height: 30em;
     background-color: magenta;
 }
 .section12{
     grid-area: section12;
-    height: 40em;
+    height: 10em;
     background-color: coral;
 }
-.section13{
-    grid-area: section13;
-    height: 40em;
-    background-color: ivory;
-}
-.section14{
-    grid-area: section14;
-    height: 40em;
-    background-color: peru;
-}
+
 @media only screen and (max-width: 750px) {
     .grid{
     overflow: hidden;
@@ -204,7 +156,7 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-        "navigation navigation"
+        "section1 section1"
         "section2 section2"
         "section3 section3"
         "section4 section4"
@@ -219,93 +171,184 @@ body{
         "section13 section13"
         "section14 section14";
 }
-    #mainLogo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 60vh;
+    .section1{
+        height: 6em;
+    }
 }
-    .section2{
-        height: 40em;
+@media only screen and (max-width: 450px) {
+    .grid{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "section1 section1"
+        "section2 section2"
+        "section3 section3"
+        "section4 section4"
+        "section5 section5"
+        "section6 section6"
+        "section7 section7"
+        "section8 section8"
+        "section9 section9"
+        "section10 section10"
+        "section11 section11"
+        "section12 section12"
+        "section13 section13"
+        "section14 section14";
+}
+    .section1{
+        height: em;
+    }
+    #icons{
+        display: none;
     }
 }
 
 
 
-.menu, .menu-bg, .menu-burger {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  font-size: 23px;
-  text-align: center;
-  border-radius: 100%;
-  right: 30px;
-  top: 24px;
+
+/* Hamburger button styles. */
+.hamburger-button {
+    
+	position: absolute;
+	transition: .3s ease-in-out;
+	width: 35px;
+	height: 34px;
+	display: block;
+	top: 7rem;
+	right: 7rem;
+	z-index: 100000;
 }
 
-.menu-bg {
-  background: #0a8e9d;
-  pointer-events: none;
-  transition: .3s;
-  right: 50px;
-  top: 45px;
-  transform: translate3d(50%, -50%, 0);
-  transform-origin: center center;
-}
-.menu-bg.fs {
-  transform: translate3d(50%, -50%, 0);
-  width: 300vw;
-  height: 300vw;
+	.hamburger-button span {
+		position: absolute;
+		height: 4px;
+		border-radius: 20px;
+		width: 100%;
+		background-color: #fff;
+		top: 0;
+		transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+	}
+
+		.hamburger-button span:nth-child(1) {
+			top: 0px;
+		}
+
+		.hamburger-button span:nth-child(2),
+		.hamburger-button span:nth-child(3) {
+			top: 13px;
+		}
+
+		.hamburger-button span:nth-child(4) {
+			top: 26px;
+		}
+
+	    .hamburger-button.active span {
+		background-color: #FFF;
+	}
+
+		.hamburger-button.active span:nth-child(1),
+		.hamburger-button.active span:nth-child(4) {
+			opacity: 0;
+		}
+
+		.hamburger-button.active span:nth-child(2) {
+			transform: rotate(45deg);
+		}
+
+		.hamburger-button.active span:nth-child(3) {
+			transform: rotate(-45deg);
+		}
+
+/* 1. Style the overlay & navigation. */
+.overlay {
+	position: fixed;
+	background: #3f9dd5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .3s, visibility .3s, height .3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    z-index: 10000;
 }
 
-.menu-burger {
-  color: white;
-  padding-top: 4px;
-  -webkit-user-select: none;
-  cursor: pointer;
-  transition: .4s;
-  transform-origin: center;
-}
-.menu-burger.fs {
-  transform: rotate(-180deg) translateY(10px);
+nav {
+	font-size: 2rem;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	text-align: center;
 }
 
-.menu-items {
-  position: absolute;
-  font-weight: bold;
-  font-size: 40px;
-  letter-spacing: 10px;
-  color: white;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  transition: .4s;
-  margin-top: 100px;
-  transform: translateY(-200%);
-  pointer-events: none;
-}
-.menu-items div {
-  transition: 1s;
-  opacity: 0;
-  margin-top: 0px;
-}
-.menu-items.fs {
-  transform: translateY(0);
-  pointer-events: auto;
-  opacity: 1;
-}
-.menu-items.fs div {
-  opacity: 1;
-  margin-top: 75px;
+	nav ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+		nav ul li {
+			opacity: 0;
+			margin: 1rem 0;
+		}
+
+			nav ul li a {
+				color: #FFF;
+				text-decoration: none;
+				transition: opacity .2s ease;
+				opacity: .75;
+			}
+
+				nav ul li a:hover {
+					opacity: 1;
+				}
+
+/* 2. Add the animation. */
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translate3d(-25%, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
 
-.content {
-  padding: 100px 50px;
-  line-height: 1.62em;
-  color: #444;
+/* 3. Style the visible overlay. */
+.overlay.visible {
+	opacity: 1;
+	visibility: visible;
+	height: 100%;
 }
-.content h1 {
-  font-weight: bold;
-  font-size: 2em;
-  margin-bottom: 1em;
+
+	.overlay.visible li {
+		animation: fadeInLeft .3s ease forwards;
+	}
+
+		.overlay.visible li:nth-of-type(1) {
+			animation-delay: 0.23s;
+		}
+
+		.overlay.visible li:nth-of-type(2) {
+			animation-delay: 0.26s;
+		}
+
+		.overlay.visible li:nth-of-type(3) {
+			animation-delay: 0.29s;
+		}
+
+		.overlay.visible li:nth-of-type(4) {
+			animation-delay: 0.32s;
+		}
+
+		.overlay.visible li:nth-of-type(5) {
+			animation-delay: 0.35s;
+		}
+
+a{
+    cursor: pointer;
 }
