@@ -142,7 +142,7 @@ body{
     grid-area: section5;
     height: 35em;
     background-color: #f9eb71;
-    background-image: url(/assets/images/surfBoards.png);
+    background-image: url(../assets/images/surfBoards.png);
     background-position: center;
     background-size: cover;
 }
