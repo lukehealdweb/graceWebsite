@@ -385,7 +385,7 @@ body{
 .hamburger-button {
     
 	position: absolute;
-    margin-right: 4.5em;
+    margin-right: 4em;
 	transition: .3s ease-in-out;
 	width: 35px;
 	height: 34px;
