@@ -1,23 +1,26 @@
 body{
     margin: 0;
+
 }
 /*Grid start*/
 .grid{
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
         "section1 section1"
         "section2 section2"
-        "section3 section3"
-        "section4 section4"
-        "section5 section5"
-        "section6 section6"
+        "section3 section4"
+        "section5 section6"
         "section7 section7"
         "section8 section8"
-        "section9 section9"
-        "section10 section11"
-        "section12 section12"
+        "section9 section10"
+        "section11 section12"
+        "section13 section14"
+        "section15 section16"
+        "section17 section18"
+        "section19 section19"
 ;
 }
 .section1{
@@ -32,6 +35,14 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 5em;
+}
+#logoTop{
+    position: absolute;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin-top: 1.2em;
+    font-size: 12px;
+    margin-left: 2em;
 }
 #contactInfo{
     display: inline-flex;
@@ -83,7 +94,7 @@ body{
     z-index: 100;
 }
 #learn{
-    font-family: lobster;
+    font-family: 'Luckiest Guy', cursive;
     color: white;
     text-align: center;
     font-size: 4em;
@@ -97,36 +108,97 @@ body{
     height: 35em;
     background-color: #ffffff;
 }
+.stock1{
+    height: 35em;
+}
+#stock1{
+    display: block;
+    width: 60vh;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 .section4{
     grid-area: section4;
     height: 35em;
-    background-color: #f9eb71; 
+    background-color: #fff; 
+}
+#whiteHut{
+    color: grey;
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: 3em;
+    margin-left: 1em;
+}
+#whiteHutText{
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+    margin-right: 5em;
+    margin-left: 2em;
 }
 .section5{
     grid-area: section5;
     height: 35em;
-    background: linear-gradient(rgba(29, 115, 124, 0.80), rgba(29, 115, 124, 0.80)), url(../assets/images/groupLessons.jpg);
+    background-color: #f9eb71;
+    background-image: url(/assets/images/surfBoards.png);
     background-position: center;
     background-size: cover;
 }
 .section6{
     grid-area: section6;
-    height: 30em;
-    background: linear-gradient(rgba(63, 157, 213, 0.80), rgba(63, 157, 213, 0.80)), url(../assets/images/schoolGroups.jpg);
-    background-position: center;
-    background-size: cover;
+    height: 35em;
+    background-color: #f9eb71;
+}
+.blue{
+    color: #3f9dd5;
 }
 .section7{
     grid-area: section7;
-    height: 30em;
-    background: linear-gradient(rgba(29, 115, 124, 0.80), rgba(29, 115, 124, 0.80)), url(../assets/images/birthdayParty.jpg);
+    height: 35em;
+    background: linear-gradient(rgba(29, 115, 124, 0.80), rgba(29, 115, 124, 0.80)), url(../assets/images/sectionSurfers.png);
     background-position: center;
     background-size: cover;
+}
+.summerCamps{
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    float: right;
+    margin-right: 16em;
+}
+.nested{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        ". section1Nest"
+        ;
+}
+.section1Nest{
+    grid-area: section1Nest;
+    color: white;
+    height: 35em;
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: 3em;
+    margin-left: 2em;
+}
+#privateText{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-right: 5em;
+    
+    
+}
+.green{
+ color: #cddf9d;
 }
 .section8{
     grid-area: section8;
     height: 30em;
-    background-color: lawngreen;
+    background: linear-gradient(rgba(29, 115, 124, 0.70), rgba(29, 115, 124, 0.70)), url(../assets/images/sectionSand.png);
+    background-position: center;
+    background-size: cover;
 }
 .section9{
     grid-area: section9;
@@ -145,8 +217,43 @@ body{
 }
 .section12{
     grid-area: section12;
-    height: 10em;
+    height: 30em;
     background-color: coral;
+}
+.section13{
+    grid-area: section13;
+    height: 30em;
+    background-color: magenta;
+}
+.section14{
+    grid-area: section14;
+    height: 30em;
+    background-color: black;
+}
+.section15{
+    grid-area: section15;
+    height: 30em;
+    background-color: salmon;
+}
+.section16{
+    grid-area: section16;
+    height: 30em;
+    background-color: cadetblue;
+}
+.section17{
+    grid-area: section17;
+    height: 30em;
+    background-color: darkgrey;
+}
+.section18{
+    grid-area: section18;
+    height: 30em;
+    background-color: sienna;
+}
+.section19{
+    grid-area: section19;
+    height: 30em;
+    background-color: darkblue;
 }
 
 @media only screen and (max-width: 750px) {
@@ -169,10 +276,41 @@ body{
         "section11 section11"
         "section12 section12"
         "section13 section13"
-        "section14 section14";
+        "section14 section14"
+        "section15 section15"
+        "section16 section16"
+        "section17 section17"
+        "section18 section18"
+        "section19 section19";
 }
     .section1{
         height: 6em;
+    }
+    #logoTop{
+        display: none;
+    }
+    .summerCamps{
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    margin:auto;
+    margin-top: 2em;
+    padding: 3em;
+    text-align: center;
+}
+    .nested{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "section1Nest section1Nest"
+        ;
+        text-align: center;
+}
+    #privateText{
+        text-align: center;
+        padding: 3em;
+        margin: auto;
+        
     }
 }
 @media only screen and (max-width: 450px) {
@@ -195,13 +333,37 @@ body{
         "section11 section11"
         "section12 section12"
         "section13 section13"
-        "section14 section14";
+        "section14 section14"
+        "section15 section15"
+        "section16 section16"
+        "section17 section17"
+        "section18 section18"
+        "section19 section19";
 }
-    .section1{
-        height: em;
-    }
+    
     #icons{
         display: none;
+    }
+    #logoTop{
+        display: none;
+    }
+    .section4{
+        height: 50em;
+        text-align: center;
+    }
+    #whiteHut{
+        margin: 2em;
+    }
+    #whiteHutText{
+        margin: 2em;
+    }
+    .section6{
+       height: 50em; 
+        text-align: center;
+    }
+    .section7{
+        height: 50em;
+        text-align: cetner;
     }
 }
 
@@ -280,7 +442,7 @@ body{
 
 nav {
 	font-size: 2rem;
-	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-family: 'Gloria Hallelujah', cursive;
 	text-align: center;
 }
 
